@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Best Taco Trucks</h1>
+        <p id="description">Nominate your pick for the best taco truck in town!</p>
+        <form id="survey-form" action="">
+            <fieldset>
+                <label for="name" id="name-label">Name of the Business: <input id="name" type="text" required placeholder="Has the best tacos"/></label>
+                <label for="email" id="email-label">Email of the Business: <input id="email" type="email" required placeholder="ilovetacos@email.com"/></label>
+                <label for="number" id="number-label">Rate the tacos (1-10): <input id="number" type="number" min="1" max="10" placeholder="(1-10)"/></label>
+            </fieldset>
+            <fieldset>Style of Tacos
+                <select name="" id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Traditional</option>
+                    <option value="2">Americanized</option>
+                </select>
+            </fieldset>
+            <fieldset>Did you get sick?
+                <label for="yes-got-sick"><input id="yes-got-sick" name="yes-got-sick" value="1" type="radio" class="inline">yes</label>
+                <label for="yes-got-sick"><input id="yes-got-sick" name="yes-got-sick" value="2" type="radio" class="inline">no</label>
+            </fieldset>
+            <fieldset>
+                <label for="shell">Soft Shell or Hard Shell?<br>
+                  <input id="shell" type="checkbox" name="shell" class="inline" value="1"/>Soft
+                  <input id="shell" type="checkbox" name="shell" class="inline" value="2"/>Hard
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="comments">Additional Comments:
+                    <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like tacos..."></textarea>
+                </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
